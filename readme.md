@@ -3,6 +3,7 @@
 * 언어 : Python
 
 * 추후 CRM (고객관리 솔루션) 프로젝트 개발에 사용할 데이터를 생성한다
+* [CRM 페이지](https://github.com/sangeun99/crm-page.git) 
 
 * 생성할 수 있는 데이터 : User, Store, Item, Order, Orderlist
 

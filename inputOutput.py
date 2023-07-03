@@ -1,5 +1,4 @@
 import csv
-import datetime
 
 def getUserInput(arguments):
     try : 
@@ -30,8 +29,6 @@ def printStdout(data) :
 def writeCSV(filename, data) :
     f = open(filename, 'w', newline='', encoding='UTF8')
     dataWriter = csv.writer(f)
-    createdTime = [datetime.datetime.now()]
-    dataWriter.writerow(createdTime)
     dataWriter.writerow(data[0].keys())
     for d in data:
         dataWriter.writerow(d.values())

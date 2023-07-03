@@ -20,7 +20,6 @@ from inputOutput import getUserInput, getCommandLineInput, printOps
 def loadCSVFile(filename, target):
     with open(filename, newline='', encoding='UTF8') as f:
         reader = csv.reader(f)
-        next(reader) ## time 빼고 읽기
         next(reader) ## header 빼고 읽기
         for row in reader:
             target.append(row)

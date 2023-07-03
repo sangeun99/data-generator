@@ -14,6 +14,6 @@ class Item:
             "id" : self.itemId,
             "name" : self.itemName,
             "type" : self.itemType,
-            "price" : self.unitPrice
+            "unitprice" : self.unitPrice
         }
         return generatedData

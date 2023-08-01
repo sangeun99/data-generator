@@ -1,6 +1,5 @@
-from generators.common.address import Address
 from generators.user.name import Name
-from generators.store.storename import StoreName
+from generators.store.storetype import StoreType
 
 def loadFiles(filename, target):
     try :
@@ -13,8 +12,5 @@ def loadFiles(filename, target):
 
 loadFiles('src/firstname.txt', Name.firstnames)
 loadFiles('src/lastname.txt', Name.lastnames)
-loadFiles('src/cities.txt', Address.cities)
-loadFiles('src/gus.txt', Address.gus)
-loadFiles('src/storetypes.txt', StoreName.types)
-loadFiles('src/storelocations.txt', StoreName.storelocations)
-print("Loaded 6 files")
+loadFiles('src/storetypes.txt', StoreType.types)
+print("Loaded 3 files")

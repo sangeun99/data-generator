@@ -8,14 +8,8 @@ class OrderId(GeneratorBase):
     selected = []
 
     def __init__(self):
-        while True:
-            orderInfo = random.choice(OrderId.orders)
-            if orderInfo[0] in OrderId.selected:
-                continue
-            else :
-                self.orderId = orderInfo[0]
-                OrderId.selected.append(self.orderId)
-                break
+        orderInfo = random.choice(OrderId.orders)
+        self.orderId = orderInfo[0]
         
     def generate(self):
         return self.orderId

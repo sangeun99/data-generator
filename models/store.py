@@ -1,14 +1,14 @@
 from generators.common.address import Address
 from generators.common.id import Id
-from generators.store.storename import StoreName
+from generators.store.storetype import StoreType
 
 class Store:
     def __init__(self) :
         self.id = Id().generate()
-        newStoreName = StoreName()
-        self.name = newStoreName.generate()
-        self.type = newStoreName.generateType()
+        self.type = StoreType().generate()
         self.address = Address().generate()
+        location = self.address.split()[2]
+        self.name = f"{self.type} {location}점"
 
     def generate(self):
         generatedData = {
